@@ -247,10 +247,6 @@ else
 	$(AT)-$(RM) $(BUILD_DIR)/*
 endif	
 	
-
-download:
-	openocd -f C:/Users/Retuze/App/openocd/share/openocd/scripts/interface/cmsis-dap.cfg -f C:/Users/Retuze/App/openocd/share/openocd/scripts/target/stm32f1x.cfg -c init -c "reset halt; wait_halt; flash write_image erase build/WS2812.bin 0x08000000" -c reset -c shutdown
-
 #######################################
 # dependencies
 #######################################
